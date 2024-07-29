@@ -1,0 +1,196 @@
+//layout of webpage
+body {
+    background-color: #199f7c;
+    color: white;
+    //do not leave edges as open borders
+    box-sizing: border-box;
+    display: block;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: 10px;
+    outline: 2px solid darkred;
+    color: darkred;
+
+}
+
+//paragraph customisation
+p {
+    font-size: medium;
+}
+
+//subheading customisation
+h3 {
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+//grid container
+.container {
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    grid-template-columns: 50% 50%;
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    //grid-template-rows: 35% 30% 35%;
+    gap: 50px;
+    overflow-wrap: break-word;
+    // overflow: hidden;
+}
+
+//our story text
+#our-story {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 0;
+}
+
+//our story image
+.inlineImage1 {
+    grid-row: 1;
+    grid-column: 2;
+    //image must fill the column
+    width: 100%;
+    //maintain aspect ratio
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+//images
+aside {
+    margin-bottom: 0;
+}
+
+//our food text
+#our-food {
+    grid-row: 2;
+    grid-column: 2;
+    margin-bottom: 0;
+}
+
+//our food image
+.inlineImage2 {
+    //place below '#our-food'
+    grid-row: 3;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+//our people text
+#our-people {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+//our people image
+.inlineImage3 {
+    grid-row: 3;
+    grid-column: 2;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+//dropdown menu format specifications
+//hover menu due to jQuery function that specifies that each element clicked on should fade out
+.dropdown-menu {
+    position: relative;
+    text-decoration: none;
+    font-size: medium;
+    text-align: center;
+    padding: 10px;
+    float: inline-end;
+}
+
+//dropdown menu button
+.menuBtn {
+    background-color: darkred;
+    color: white;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+
+//menu options
+.dropdown-options {
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+}
+
+//menu option items
+.dropdown-option-items {
+    background-color: white;
+    position: static;
+    overflow: hidden;
+}
+
+//unordered list
+.dropdown-options ul,
+.dropdown-option-items ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+//menu list options
+.dropdown-options li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+//menu option items list
+.dropdown-option-items li {
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+/*
+show menu option items when section is hovered over using SCSS:
+.dropdown-options li:hover .dropdown-option-items {
+    display: block;
+}
+*/
+
+//change upon hover over menu options
+.dropdown-options li:hover {
+    background-color: lightgray;
+}
+
+//menu option items have a lighter background upon hover
+.dropdown-option-items li:hover {
+    background-color: rgb(234, 233, 233);
+}
+
+//remove link formatting
+.dropdown-options li a {
+    text-decoration: none;
+    color: darkred;
+}
+
+//style menu option items
+.dropdown-option-items li a {
+    text-decoration: none;
+    color: seagreen;
+    font-style: italic;
+}
+
+//slide elements around
+#elements {
+    position: absolute;
+    // border-radius: 50%;
+}

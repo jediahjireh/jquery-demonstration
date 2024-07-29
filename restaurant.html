@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krusty Krab</title>
+
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="restaurant.css">
+
+    <!-- link JQUERY to html file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- styling caters for display of form in Google Chrome
+        the form may appear differently in other browsers (such as Safari) -->
+    <main id="elements">
+        <!-- restaurant name -->
+        <h1 style="text-align: center;">Krusty Krab</h1>
+
+        <!-- dropdown menu 
+            referenced https://www.w3schools.com/howto/howto_js_accordion.asp#:~:text=Animated%20Accordion%20(Slide%20Down),property%2C%20to%20the%20panel%20class. | https://www.shecodes.io/athena/28796-how-to-make-a-dropdown-list-appear-when-hovering-over-something-in-a-menu-bar | https://stackoverflow.com/questions/8775860/jquery-drop-down-hover-menu
+            websites referenced for guidance on how to make a dropdown list appear when hovering over something in a menu bar
+        -->
+        <header class="dropdown-menu">
+            <button class="menuBtn">Menu</button>
+            <nav class="dropdown-options">
+                <!-- unordered list of menu options -->
+                <ul>
+                    <!-- link to menu option 'webpages' -->
+                    <li><a href="#">Breakfast</a>
+                        <!-- unordered list of menu option items -->
+                        <div class="dropdown-option-items">
+                            <ul>
+                                <!-- link to menu option item section webpage portions -->
+                                <li><a href="#">Krabby Patty</a></li>
+                                <li><a href="#">Coral Bits</a></li>
+                                <li><a href="#">Kelp Rings</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Lunch</a>
+                        <!-- unordered list of menu option items -->
+                        <div class="dropdown-option-items">
+                            <ul>
+                                <!-- link to menu option item section webpage portions -->
+                                <li><a href="#">Double Krabby Patty</a></li>
+                                <li><a href="#">Salty Sea Dog</a></li>
+                                <li><a href="#">Footlong</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Dinner</a>
+                        <!-- unordered list of menu option items -->
+                        <div class="dropdown-option-items">
+                            <ul>
+                                <!-- link to menu option item section webpage portions -->
+                                <li><a href="#">Triple Krabby Patty</a></li>
+                                <li><a href="#">Krabby Meal</a></li>
+                                <li><a href="#">Sailor's Surprise</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Desserts</a>
+                        <!-- unordered list of menu option items -->
+                        <div class="dropdown-option-items">
+                            <ul>
+                                <!-- link to menu option item section webpage portions -->
+                                <li><a href="#">Krabby Patty with Jellyfish Jelly</a></li>
+                                <li><a href="#">Kelp Cupcake</a></li>
+                                <li><a href="#">Krabby Cake</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Drinks</a>
+                        <!-- unordered list of menu option items -->
+                        <div class="dropdown-option-items">
+                            <ul>
+                                <!-- link to menu option item section webpage portions -->
+                                <li><a href="#">Kelp Shake</a></li>
+                                <li><a href="#">Seafoam Soda</a></li>
+                                <li><a href="#">Krusty Coffee</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <div class="container">
+                <div id="our-story">
+                    <h3 class="heading">Our Story</h3>
+                    <p>
+                        The <i>Krusty Krab</i> stands tall as Bikini Bottom's crown jewel. It all started one fateful
+                        day when
+                        Plankton and
+                        ol' Mr. Krabs cooked up a burger to rival them all. We tested our creation on Old Man Jenkins
+                        and it
+                        knocked
+                        him out cold!
+                        <br><br>
+                        Our scuffle over the recipe won me most of it. During the squabble, I got to
+                        knocking
+                        a few
+                        ingredients into the cauldron of patty batter and whad'ya know?
+                        <br><br>
+                        Plankton had landed up with the corner reading, "...and a pinch of chum”. Little did I know,
+                        that pinch would change everything. And there you have it, the
+                        legendary <i>Krabby Patty</i> was born.
+                        <br><br>
+                        And Plankton? That chum is still chasing after me secret formula to this
+                        day!
+                    </p>
+                </div>
+                <aside>
+                    <img class="inlineImage1" src="images/our-story.png" alt="Our Story image" />
+                </aside>
+
+                <div id="our-food">
+                    <h3 class="heading">Our Food</h3>
+                    <p>
+                        It's the <i>Krabby Patty</i> that keeps 'em bottom-feeders coming back for more!
+                        <br>
+                        Secret sauces, sizzling patties and kelp shakes, we've got 'em all.
+                        <br><br>
+                        P.S. Plankton, the secret formula is
+                        safe with me, 'ya scurvy bucket!
+                    </p>
+                </div>
+                <aside>
+                    <img class="inlineImage2" src="images/our-food.webp" alt="Our Food image" />
+                </aside>
+
+                <div id="our-people">
+                    <h3 class="heading">Our People</h3>
+                    <p id="styleParagraph">
+                        Spongebob's the heart and soul of this joint. Our star fry cook bathes each order in love and
+                        attention.
+                        <br>
+                        And Squidward...well, he's Squidward.
+                        <br><br>
+                        Count on our tight-knit crew to serve up satisfaction!
+                    </p>
+                </div>
+                <aside>
+                    <img class="inlineImage3" src="images/our-people.png" alt="Our People image" />
+                </aside>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- link to JS file -->
+    <script type="text/javascript" src="restaurant.js"></script>
+</body>
+
+</html>
